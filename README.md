@@ -26,7 +26,7 @@ Performed an end-to-end customer behavior analysis using transactional retail da
 
 Defined key performance indicators (KPIs) such as:
 
--Total Revenue
+- Total Revenue
 - Average Purchase Amount
 - Discount Usage Rate
 - Product Review Performance
@@ -50,9 +50,9 @@ All analysis was performed entirely using SQL.
 
 **Tools:**
 
-- SQL (MySQL / PostgreSQL compatible syntax)
+- **SQL (MySQL / PostgreSQL compatible syntax)**
 
-- SQL Techniques Applied:
+- **SQL Techniques Applied:**
 
   - GROUP BY, ORDER BY
   - SUM, AVG, COUNT
@@ -61,7 +61,7 @@ All analysis was performed entirely using SQL.
   - Window Functions (RANK())
   - Common Table Expressions (CTEs)
 
-- Business Concepts Applied:
+- **Business Concepts Applied:**
 
   - Revenue Analysis
   - Customer Segmentation
