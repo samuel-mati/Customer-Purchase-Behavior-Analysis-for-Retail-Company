@@ -3,6 +3,8 @@
 
 A leading retail company is experiencing changing customer purchasing patterns across demographics, product categories, and sales channels. To support data-driven decision-making, I analyzed the company’s consumer behavior dataset using SQL to uncover revenue trends, loyalty patterns, discount effectiveness, and subscription impact. The analysis revealed clear differences in spending behavior across customer segments, product performance driven by discounts, and strong revenue concentration within specific age groups and loyalty tiers. These insights provide a foundation for optimizing marketing strategy, customer engagement, and long-term revenue growth.
 
+!!(dashboard.png)[]
+
 **Key Highlights:**
 
 - Identified clear revenue differences across gender, age groups, and subscription status.
