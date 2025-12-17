@@ -1,119 +1,205 @@
-# Customer Shopping Behavior Analysis (SQL Portfolio Project)
+# Customer Shopping Behavior Analysis  
+### SQL Portfolio Project
+
+**Author:** Samuel Mati  
+**Role:** Data Alchemist | Business Analyst  
+**Date:** 6th December 2025  
+
+---
+
 ## 1. Executive Summary
 
-A leading retail company is experiencing changing customer purchasing patterns across demographics, product categories, and sales channels. To support data-driven decision-making, I analyzed the company’s consumer behavior dataset using SQL to uncover revenue trends, loyalty patterns, discount effectiveness, and subscription impact. The analysis revealed clear differences in spending behavior across customer segments, product performance driven by discounts, and strong revenue concentration within specific age groups and loyalty tiers. These insights provide a foundation for optimizing marketing strategy, customer engagement, and long-term revenue growth.
+A retail company observed changes in customer purchasing behavior across demographics, product categories, and engagement patterns. To support data-driven decision-making, I conducted an end-to-end customer behavior analysis using SQL to evaluate revenue drivers, loyalty patterns, discount effectiveness, shipping preferences, and subscription impact.
+
+The analysis revealed that **male customers generated 157,890 in revenue**, more than double that of **female customers at 75,191**. **Young adults** emerged as the highest-value age group, contributing **70,899 in revenue across 1,173 orders**. Additionally, **non-subscribed customers generated 170,436 in revenue**, nearly three times the revenue of subscribed customers (**62,645**), despite having similar average purchase values.
+
+These insights provide clear opportunities to improve marketing targeting, optimize discount usage, refine the subscription model, and strengthen customer retention strategies.
 
 ![Dashboard](src/Dashboard.png)
 
-**Key Highlights:**
+### Key Highlights
+- Identified revenue gaps across **gender, age groups, and subscription status**
+- Found **discount-dependent products** with discount usage rates exceeding **47%**
+- Revealed a highly loyal customer base with **3,116 customers making 10+ purchases**
+- Highlighted **young adults** as the most valuable revenue segment
 
-- Identified clear revenue differences across gender, age groups, and subscription status.
-- Revealed products that are highly dependent on discounts for sales volume.
-- Segmented customers into New, Returning, and Loyal categories for targeted retention strategies.
+---
 
 ## 2. Business Problem
 
-A leading retail company wants to better understand its customers’ shopping behavior in order to improve sales, customer satisfaction, and long-term loyalty. The management team has noticed changes in purchasing patterns across demographics, product categories, and sales channels (online vs. offline). They are particularly interested in uncovering which factors, such as discounts, reviews, seasons, or payment preferences, drive consumer decisions and repeat purchases.
+The company wants to better understand customer shopping behavior to improve sales performance, customer satisfaction, and long-term loyalty. Management observed changes in purchasing patterns across demographics, product categories, and customer engagement factors such as discounts, shipping preferences, and subscriptions.
 
-**Central Business Question:**
+### Central Business Question
 
-*How can the company leverage consumer shopping data to identify trends, improve customer engagement, and optimize marketing and product strategies?*
+**How can consumer shopping data be leveraged to identify trends, improve customer engagement, and optimize marketing and product strategies?**
 
-This project uses SQL to turn raw transaction data into actionable business intelligence that supports strategic decision-making across marketing, sales, and customer experience teams.
+This project uses SQL-based analysis to transform raw transaction data into actionable business intelligence for marketing, sales, and customer experience teams.
+
+---
 
 ## 3. Methodology
-**Analytical Approach:**
 
-Performed an end-to-end customer behavior analysis using transactional retail data.
+### Analytical Approach
 
-Defined key performance indicators (KPIs) such as:
+An end-to-end customer behavior analysis was performed using transactional retail data.  
+Key performance indicators (KPIs) were defined and analyzed, including:
 
 - Total Revenue
 - Average Purchase Amount
 - Discount Usage Rate
-- Product Review Performance
+- Product Review Ratings
 - Customer Loyalty Segmentation
 - Subscription Revenue Contribution
+- Revenue by Demographics
 
-The primary deliverable is a structured SQL analysis that answers real-world business questions.
+The primary deliverable is a structured SQL analysis answering real-world business questions.
 
-**Technical Implementation:**
+### Technical Implementation
 
-- **Data Exploration:** Used SQL SELECT statements to inspect the structure and contents of the customers table.
-- **Aggregation & Grouping:** Applied SUM, AVG, and COUNT functions to analyze revenue and customer behavior.
-- **Conditional Logic:** Used CASE WHEN for customer segmentation and discount rate calculations.
-- **Subqueries:** Used subqueries to compare individual spending behavior against overall averages.
-- **Window Functions:** Applied ranking functions to identify top products within each category.
-- **Common Table Expressions (CTEs):** Used CTEs for clean customer segmentation and ranked product analysis.
+- **Data Exploration:** Inspected table structure and data quality using SQL queries
+- **Aggregation & Grouping:** Used `SUM`, `AVG`, and `COUNT` to analyze revenue and customer behavior
+- **Conditional Logic:** Applied `CASE WHEN` statements for segmentation and classification
+- **Subqueries:** Compared individual purchase behavior against overall averages
+- **Window Functions:** Used `RANK()` to identify top-performing products by category
+- **CTEs:** Applied Common Table Expressions for clean, modular analysis
 
 All analysis was performed entirely using SQL.
 
+---
+
 ## 4. Skills & Tools Used
 
-**Tools:**
+### Tools
+- SQL (MySQL / PostgreSQL-compatible syntax)
 
-- **SQL (MySQL / PostgreSQL compatible syntax)**
+### SQL Techniques Applied
+- `GROUP BY`, `ORDER BY`
+- `SUM`, `AVG`, `COUNT`
+- `CASE WHEN`
+- Subqueries
+- Window Functions (`RANK`)
+- Common Table Expressions (CTEs)
 
-- **SQL Techniques Applied:**
+### Business Concepts Applied
+- Revenue Analysis
+- Customer Segmentation
+- Discount Effectiveness
+- Product Performance Analysis
+- Subscription Impact Assessment
+- Demographic Revenue Contribution
 
-  - GROUP BY, ORDER BY
-  - SUM, AVG, COUNT
-  - CASE WHEN
-  - Subqueries
-  - Window Functions (RANK())
-  - Common Table Expressions (CTEs)
+---
 
-- **Business Concepts Applied:**
+## 5. Key Results & Insights
 
-  - Revenue Analysis
-  - Customer Segmentation
-  - Discount Effectiveness
-  - Product Performance Analysis
-  - Subscription Impact Assessment
-  - Demographic Revenue Contribution
+### Revenue by Gender
+- Male customers: **157,890**
+- Female customers: **75,191**
+- Revenue difference: **82,699**
 
-## 5. Results & Business Recommendations
-**Key Results:**
+### Product Ratings
+- Gloves: **3.9**
+- Sandals: **3.8**
+- Boots: **3.8**
+- Hats: **3.8**
+- Skirts: **3.8**
 
-- **Revenue by Gender:** Clear revenue differences were observed between male and female customers, indicating important demographic spending trends.
-- **High-Value Discount Customers:** Some customers continue to spend above the company’s average purchase amount even when using discounts, indicating strong revenue potential without heavy price sensitivity.
-- **Product Performance:** The top 5 highest-rated products highlight which items deliver the strongest customer satisfaction.
-- **Shipping & Spending Behavior:** Spending patterns differ between Standard and Express shipping users, showing how logistics choices influence revenue.
-- **Subscription Impact:** Subscribed customers show distinct spending behavior and revenue contribution compared to non-subscribers.
-- **Discount-Driven Products:** Certain products rely heavily on discounts for sales volume, posing potential margin risks.
-- **Customer Loyalty Segmentation:** Customers were successfully classified into New, Returning, and Loyal groups for retention strategy development.
-- **Category Leaders:** The top 3 most purchased products were identified within each category.
-- **Repeat Buyers & Subscriptions:** A clear relationship exists between repeat purchases and subscription status.
-- **Revenue by Age Group:** Specific age groups contribute a disproportionately high share of total revenue.
+### Shipping Type & Spending
+- Express shipping average spend: **60.48**
+- Standard shipping average spend: **50.50**
+- Difference: **9.98 higher** for express shipping
 
-**Business Recommendations:**
+### Subscription Impact
+- **Subscribed customers**
+  - Customers: **1,053**
+  - Average spend: **59.49**
+  - Revenue: **62,645**
 
-1.  **Strengthen Loyalty Programs:**
-Focus marketing and retention strategies on Returning and Loyal customers to increase lifetime value.
+- **Non-subscribed customers**
+  - Customers: **2,847**
+  - Average spend: **59.87**
+  - Revenue: **170,436**
 
-2. **Optimize Discount Strategy:**
-Reduce over-reliance on discounts for products with high discount-driven sales to protect profit margins.
+### Discount-Driven Products
+- Hats: **50.00%**
+- Sneakers: **49.66%**
+- Coats: **49.07%**
+- Sweaters: **48.17%**
+- Pants: **47.37%**
 
-3. **Product Investment Strategy:**
-Prioritize inventory and marketing spend on top-rated and top-selling products within each category.
+### Customer Loyalty Segmentation
+- New customers (1 purchase): **83**
+- Returning customers (2–10 purchases): **701**
+- Loyal customers (10+ purchases): **3,116**
 
-4. **Subscription Growth Strategy:**
-Leverage repeat buyer behavior to drive targeted subscription promotions.
+### Top Products by Category
+**Accessories**
+- Jewelry: **171**
+- Sunglasses: **161**
+- Belt: **161**
 
-5. **Demographic Targeting:**
-Tailor marketing campaigns based on high-revenue age groups and gender segments to maximize ROI.
+**Clothing**
+- Blouse: **171**
+- Pants: **171**
+- Shirt: **169**
 
+**Footwear**
+- Sandals: **160**
+- Shoes: **150**
+- Sneakers: **145**
 
+**Outerwear**
+- Jacket: **163**
+- Coat: **161**
 
+### Repeat Buyers & Subscriptions
+- Subscribed repeat buyers (>5 purchases): **958**
+- Non-subscribed repeat buyers (>5 purchases): **2,518**
 
-## 6. Next Steps (Future Enhancements)
+### Revenue by Age Group
+- Young Adults: **70,899 revenue**, **1,173 orders**
+- Middle-Aged: **59,197 revenue**, **986 orders**
+- Seniors: **55,763 revenue**, **944 orders**
+- Adults: **47,222 revenue**, **797 orders**
 
-Deeper customer segmentation using advanced loyalty scoring.
+---
 
-1. Time-series analysis for seasonal purchasing trends.
+## 6. Business Recommendations
 
-2. Integration with visualization tools such as Power BI or Tableau.
+1. **Improve Female Customer Revenue**
+   - Launch targeted campaigns to close the **82,699 revenue gap**.
 
-3. Customer Lifetime Value (CLV) modeling.
+2. **Optimize the Subscription Model**
+   - Redesign subscription incentives to increase value beyond current spending levels.
 
-4. Automated reporting pipelines.
+3. **Refine Discount Strategy**
+   - Reduce heavy discounting on products with discount usage above **47%** to protect margins.
+
+4. **Leverage Loyal Customers**
+   - Focus retention efforts on the **3,116 loyal customers** to maximize lifetime value.
+
+5. **Target High-Value Age Groups**
+   - Prioritize marketing spend on **young adults**, the highest revenue-generating segment.
+
+---
+
+## 7. Next Steps (Future Enhancements)
+
+- Advanced loyalty scoring and behavioral segmentation
+- Time-series analysis for seasonal trends
+- Integration with Power BI or Tableau for automated reporting
+- Customer Lifetime Value (CLV) modeling
+- End-to-end automated analytics pipelines
+
+---
+
+## 8. Repository Contents
+
+- SQL analysis scripts
+- Project documentation
+- Power BI dashboard
+- Supporting files and assets
+
+---
+
+*This project demonstrates the ability to translate raw transactional data into clear, actionable business insights using SQL.*
