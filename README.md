@@ -1,5 +1,5 @@
 # Customer Shopping Behavior Analysis  
-### SQL Portfolio Project
+
 
 **Author:** Samuel Mati  
 **Role:** Data Alchemist | Business Analyst  
