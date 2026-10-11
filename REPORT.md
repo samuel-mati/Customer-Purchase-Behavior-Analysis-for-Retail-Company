@@ -1,8 +1,11 @@
 # MEMORANDUM
 
 **TO:** Retail Operations Manager
+
 **FROM:** Samuel Mati,  Business Analyst
+
 **DATE:** 6th December 2025
+
 **RE:** Customer Shopping Behavior Analysis - Findings & Recommended Actions
 
 ---
